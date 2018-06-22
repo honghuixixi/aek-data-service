@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.aek.ebey.data.mapper.QcPmDataMapper">
+
+	<!-- 通用查询映射结果 -->
+	<resultMap id="BaseResultMap" type="com.aek.ebey.data.model.QcPmData">
+		<id column="id" property="id" />
+		<result column="tenant_id" property="tenantId" />
+		<result column="count_date" property="countDate" />
+		<result column="pm_implement_total_year" property="pmImplementTotalYear" />
+		<result column="pm_plan_total_year" property="pmPlanTotalYear" />
+		<result column="pm_rate_year" property="pmRateYear" />
+		<result column="count_time" property="countTime" />
+	</resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, tenant_id AS tenantId, count_date AS countDate, pm_implement_total_year AS pmImplementTotalYear, pm_plan_total_year AS pmPlanTotalYear, pm_rate_year AS pmRateYear, count_time AS countTime
+    </sql>
+</mapper>

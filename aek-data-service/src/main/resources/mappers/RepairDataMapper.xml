@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.aek.ebey.data.mapper.RepairDataMapper">
+
+	<!-- 通用查询映射结果 -->
+	<resultMap id="BaseResultMap" type="com.aek.ebey.data.model.RepairData">
+		<id column="id" property="id" />
+		<result column="tenant_id" property="tenantId" />
+		<result column="count_date" property="countDate" />
+		<result column="apply_total_num_year" property="applyTotalNumYear" />
+		<result column="complete_total_num_year" property="completeTotalNumYear" />
+		<result column="repair_total_capital_year" property="repairTotalCapitalYear" />
+		<result column="repair_assets_num" property="repairAssetsNum" />
+		<result column="repair_distribution_data" property="repairDistributionData" />
+		<result column="count_time" property="countTime" />
+	</resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, tenant_id AS tenantId, count_date AS countDate, apply_total_num_year AS applyTotalNumYear, complete_total_num_year AS completeTotalNumYear, repair_total_capital_year AS repairTotalCapitalYear, repair_assets_num AS repairAssetsNum, repair_distribution_data AS repairDistributionData, count_time AS countTime
+    </sql>
+</mapper>

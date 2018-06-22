@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.aek.ebey.data.mapper.AssetsDataMapper">
+
+	<!-- 通用查询映射结果 -->
+	<resultMap id="BaseResultMap" type="com.aek.ebey.data.model.AssetsData">
+		<id column="id" property="id" />
+		<result column="tenant_id" property="tenantId" />
+		<result column="count_date" property="countDate" />
+		<result column="assets_total_num" property="assetsTotalNum" />
+		<result column="assets_total_capital" property="assetsTotalCapital" />
+		<result column="assets_total_new_num_year" property="assetsTotalNewNumYear" />
+		<result column="assets_total_discard_num_year" property="assetsTotalDiscardNumYear" />
+		<result column="assets_total_new_capital_year" property="assetsTotalNewCapitalYear" />
+		<result column="assets_total_discard_capital_year" property="assetsTotalDiscardCapitalYear" />
+		<result column="assets_repair_percent" property="assetsRepairPercent" />
+		<result column="assets_unrepair_percent" property="assetsUnrepairPercent" />
+		<result column="assets_distribution" property="assetsDistribution" />
+		<result column="count_time" property="countTime" />
+	</resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, tenant_id AS tenantId, count_date AS countDate, assets_total_num AS assetsTotalNum, assets_total_capital AS assetsTotalCapital, assets_total_new_num_year AS assetsTotalNewNumYear, assets_total_discard_num_year AS assetsTotalDiscardNumYear, assets_total_new_capital_year AS assetsTotalNewCapitalYear, assets_total_discard_capital_year AS assetsTotalDiscardCapitalYear, assets_repair_percent AS assetsRepairPercent, assets_unrepair_percent AS assetsUnrepairPercent, assets_distribution AS assetsDistribution, count_time AS countTime
+    </sql>
+</mapper>
